@@ -41,77 +41,88 @@ type IndustryPalette = {
   gradient: string;
   icon: string;
   hoverBorder: string;
+  number: string;
 };
 
 const PALETTE: IndustryPalette[] = [
   { // Blue
-    container: "bg-blue-500/8 border-blue-500/15 border",
-    text: "text-blue-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-blue-500 to-cyan-400",
-    icon: "text-blue-600 hover:text-blue-700",
+    icon: "text-secondary",
     hoverBorder: "hover:border-grey-400/30",
+    number: "text-primary",
   },
   { // Violet
-    container: "bg-violet-500/8 border-violet-500/15 border",
-    text: "text-violet-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-violet-500 to-purple-400",
-    icon: "text-violet-600 hover:text-violet-700",
+    icon: "text-secondary",
     hoverBorder: "hover:border-grey-400/30",
+    number: "text-primary",
   },
   { // Emerald
-    container: "bg-emerald-500/8 border-emerald-500/15 border",
-    text: "text-emerald-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-emerald-500 to-teal-400",
-    icon: "text-emerald-600 hover:text-emerald-700",
+    icon: "text-secondary",
+    number: "text-primary",
     hoverBorder: "hover:border-grey-400/30",
   },
   { // Orange
-    container: "bg-orange-500/8 border-orange-500/15 border",
-    text: "text-orange-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-orange-500 to-amber-400",
-    icon: "text-orange-600 hover:text-orange-700",
+    icon: "text-secondary",
+    number: "text-primary",
     hoverBorder: "hover:border-grey-400/30",
   },
   { // Pink
-    container: "bg-pink-500/8 border-pink-500/15 border",
-    text: "text-pink-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-pink-500 to-rose-400",
-    icon: "text-pink-600 hover:text-pink-700",
+    icon: "text-secondary",
+    number: "text-primary",
     hoverBorder: "hover:border-grey-400/30",
   },
   { // Teal
-    container: "bg-teal-500/8 border-teal-500/15 border",
-    text: "text-teal-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-teal-500 to-emerald-400",
-    icon: "text-teal-600 hover:text-teal-700",
+    icon: "text-secondary",
+    number: "text-primary",
     hoverBorder: "hover:border-grey-400/30",
   },
   { // Red
-    container: "bg-red-500/8 border-red-500/15 border",
-    text: "text-red-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-red-500 to-orange-400",
-    icon: "text-red-600 hover:text-red-700",
+    icon: "text-secondary",
+    number: "text-primary",
     hoverBorder: "hover:border-red-grey/30",
   },
   { // Cyan
-    container: "bg-cyan-500/8 border-cyan-500/15 border",
-    text: "text-cyan-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-cyan-500 to-blue-400",
-    icon: "text-cyan-600 hover:text-cyan-700",
+    icon: "text-secondary",
+    number: "text-primary",
     hoverBorder: "hover:border-grey-400/30",
   },
   { // Indigo
-    container: "bg-indigo-500/8 border-indigo-500/15 border",
-    text: "text-indigo-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-indigo-500 to-blue-400",
-    icon: "text-indigo-600 hover:text-indigo-700",
+    icon: "text-secondary",
+    number: "text-primary",
     hoverBorder: "hover:border-grey-400/30",
   },
   { // Yellow
-    container: "bg-yellow-500/8 border-yellow-500/15 border",
-    text: "text-yellow-600",
+    container: "bg-cream",
+    text: "text-secondary",
     gradient: "from-yellow-500 to-amber-400",
-    icon: "text-yellow-600 hover:text-yellow-700",
+    icon: "text-secondary",
+    number: "text-primary",
     hoverBorder: "hover:border-grey-400/30",
   },
 ];
@@ -145,7 +156,7 @@ function MetricBox({ metric, accentColorClass }: { metric: CaseStudyMetric; acce
         {metric.value}
       </p>
 
-      <p className="text-[0.625rem] font-medium uppercase tracking-[0.06em] text-neutral-400 leading-normal line-clamp-2 text-balance">
+      <p className="text-[0.625rem] font-medium uppercase tracking-[0.06em] text-secondary leading-normal line-clamp-2 text-balance">
         {metric.label}
       </p>
     </div>
@@ -200,16 +211,24 @@ function CaseCard({ cs }: { cs: CaseStudy }) {
         <div className="h-px bg-neutral-100 mb-4 md:mb-6" />
 
         {/* Metrics */}
-        <MetricsGrid metrics={cs.metrics} accentColorClass={accent.text} />
+        <MetricsGrid metrics={cs.metrics} accentColorClass={accent.number} />
 
         {/* CTA */}
         <div className="mt-4 md:mt-6 pt-4 md:pt-5 border-t border-neutral-100">
           <Link
             href={cs.href}
-            className={`inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider transition-colors ${accent.icon}`}
+            className=" inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-secondary transition-colors duration-200 group-hover:text-primary/60
+  "
           >
             Read Case Study
-            <FaArrowRight className="size-3 transition-transform duration-200 group-hover:translate-x-1" />
+            <FaArrowRight
+              className="
+      size-3
+      transition-transform
+      duration-200
+      group-hover:translate-x-1
+    "
+            />
           </Link>
         </div>
       </div>
