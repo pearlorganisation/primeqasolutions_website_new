@@ -92,7 +92,7 @@ export default function HeroV2({ data, allSections = EMPTY_SECTIONS }: HeroProps
 
 
   return (
-    <section className="border-b-2 border-dashed border-gray-200  py-24 md:py-24 lg:py-30 ">
+    <section className="border-none py-24 md:py-24 lg:py-30 ">
       {/* ── Premium Aurora & Dot Mesh Background ── */}
       <div
         aria-hidden="true"

@@ -17,7 +17,12 @@ export default async function Page() {
   const jsonLd = generateHomeJsonLd({ pageSections: sections });
 
   return (
-    <main className="[&>*:nth-child(even)]:border-y [&>*:nth-child(even)]:border-neutral-200/50 [&>*:nth-child(even)]:bg-section-bg [&>*:last-child]:border-0! [&>*:last-child]:bg-white!">
+    // <main className="[&>*:nth-child(even)]:border-y [&>*:nth-child(even)]:border-neutral-200/50 [&>*:nth-child(even)]:bg-section-bg [&>*:last-child]:border-0! [&>*:last-child]:bg-white!">
+    //   <JsonLd data={jsonLd} />
+    //   <SectionRenderer sections={sections} />
+    // </main>
+
+    <main className="[&>*:nth-child(even)]:bg-section-bg [&>*:last-child]:bg-white!">
       <JsonLd data={jsonLd} />
       <SectionRenderer sections={sections} />
     </main>

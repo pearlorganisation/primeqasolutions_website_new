@@ -83,7 +83,7 @@ const P = ({
 }) => (
   <p
     className={cn(
-      "text-sm md:text-base leading-relaxed text-neutral-500 not-first:mt-0",
+      "text-xs md:text-sm leading-relaxed text-secondary not-first:mt-0",
       className
     )}
   >
