@@ -75,7 +75,7 @@ export function FaqSection({
                     onClick={() => toggleOpen(index)}
                     className="w-full flex items-center justify-between hover:cursor-pointer py-4.5 text-left focus:outline-none group"
                   >
-                    <span className="text-base lg:text-lg font-medium text-neutral-800 group-hover:text-neutral-950 transition-colors leading-snug">
+                    <span className="text-sm md:text-base font-medium text-primary/80 group-hover:text-primary transition-colors leading-snug">
                       {faq.question}
                     </span>
                     <div className="ml-4 shrink-0">
@@ -90,7 +90,7 @@ export function FaqSection({
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <div className="pb-5 pr-8 text-neutral-500 text-sm leading-relaxed">
+                      <div className="pb-5 pr-8 text-secondary md:text-sm text-xs leading-relaxed">
                         {faq.answer}
                       </div>
                     </div>

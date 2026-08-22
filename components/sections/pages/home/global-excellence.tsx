@@ -47,7 +47,7 @@ export function GlobalExcellence() {
     <Section className="py-24 lg:py-32 bg-white border-t border-slate-100">
       <Container>
         {/* Section Header — Centered */}
-        <div className="flex flex-col items-center text-center bg-[var(--color-page-canvas)] max-w-2xl mx-auto mb-16 md:mb-20">
+        <div className="flex flex-col items-center text-center bg-(--color-page-canvas) max-w-2xl mx-auto mb-16 md:mb-20">
           <SectionBadge label="Global Excellence" />
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-5 font-space tracking-tight">
             Internationally Recognized &{" "}
