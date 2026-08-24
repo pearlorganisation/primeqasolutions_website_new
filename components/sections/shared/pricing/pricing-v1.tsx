@@ -78,13 +78,13 @@ export function PricingV1({
                 <CardHeader className="px-5 sm:px-6 md:px-8 pt-6 sm:pt-8 md:pt-10 pb-0 gap-0">
                   {/* Label */}
                   <div className="flex items-center gap-4 mb-3 sm:mb-4">
-                    <p className={`text-[11px] sm:text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] ${plan.featured ? "text-white/90" : "text-neutral-500"}`}>
+                    <p className={`text-xs font-medium uppercase tracking-[0.15em] sm:tracking-[0.18em] ${plan.featured ? "text-white/90" : "text-neutral-500"}`}>
                       {plan.label}
                     </p>
                   </div>
 
                   {/* Plan name */}
-                  <CardTitle className={`text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight mb-1.5 sm:mb-2 ${plan.featured ? "text-white" : "text-foreground"}`}>
+                  <CardTitle className={`text-xl sm:text-2xl md:text-2xl font-medium tracking-tight mb-1.5 sm:mb-2 ${plan.featured ? "text-white" : "text-foreground"}`}>
                     {plan.name}
                   </CardTitle>
 

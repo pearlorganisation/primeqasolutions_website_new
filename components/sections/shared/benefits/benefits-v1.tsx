@@ -105,7 +105,7 @@ export function BenefitsV1({
             return (
               <div
                 key={item.id || i}
-                className="group rounded-md bg-neutral-50 border border-neutral-200/40 py-2 px-2 flex items-center   "
+                className="group rounded-md bg-cream hover:brightness-[0.97] py-2 px-2 flex items-center"
               >
                 {/* Icon - Clean & Minimal */}
                 <div className="shrink-0 flex size-12 items-center justify-center rounded-lg text-neutral-950 transition-colors duration-300">
@@ -124,7 +124,7 @@ export function BenefitsV1({
                 </div>
 
                 {/* Title */}
-                <H3 className="text-sm! p-0 font-medium text-neutral-900">
+                <H3 className="text-sm! p-0 font-medium text-primary/80">
                   {item.title}
                 </H3>
               </div>
