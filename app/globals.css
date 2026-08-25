@@ -19,7 +19,7 @@
   --sand: #f2ede5;
   --border: #d5d9e2;
 
-  --success: #28c840;
+  --success: #178455;
   --warning: #ffbd2e;
   --danger: #ff5f57;
   /* --color-jet-ink: #0a0a0a; */
@@ -67,6 +67,8 @@
   --color-secondary: #858585;
   --color-primary-foreground: #ffffff;
   --color-cream: var(--cream);
+  --color-success: var(--success);
+ 
   /* --color-primary-foreground: var(--color-text-primary); */
   /* --color-secondary: var(--color-text-secondary); */
   /* --color-primary-foreground: var(--color-text-primary); */

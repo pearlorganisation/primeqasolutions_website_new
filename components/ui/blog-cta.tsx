@@ -24,10 +24,10 @@ export function BlogCta({
         className
       )}
     >
-      <H2 className="text-[1.5rem] sm:text-[1.75rem]! text-primary-foreground font-bold font-space tracking-tight mb-4 leading-tight">
+      <H2 className="text-[1.5rem] sm:text-[1.75rem]! text-white font-bold font-space tracking-tight mb-4 leading-tight">
         {title}
       </H2>
-      <p className="text-primary-foreground/90 text-[0.9375rem] sm:text-[1rem] leading-relaxed max-w-2xl mb-8 font-medium">
+      <p className="text-secondary text-[0.9375rem] sm:text-[1rem] leading-relaxed max-w-2xl mb-8 font-medium">
         {desc}
       </p>
       <Link
