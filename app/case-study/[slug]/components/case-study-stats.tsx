@@ -1,4 +1,4 @@
- 
+
 import { Container, Section } from "@/components/ui/container";
 import type { CaseStudyStateBlock, CaseStudyStatItem } from "@/types/case-study";
 
@@ -22,18 +22,18 @@ export function CaseStudyStats({ data }: CaseStudyStatsProps) {
             {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col gap-3 justify-center border-neutral-200/60 border-r-0 odd:border-r lg:border-r lg:[&:nth-child(4)]:border-r-0">
                 {/* Value */}
-                <span className="text-[3rem] tracking-tight font-medium text-primary leading-none">
+                <span className="font-display text-2xl min[998px]:text-2xl font-medium text-primary tabular-nums tracking-tight">
                   {stat.stats}
                 </span>
-                
+
                 {/* Label & Description */}
                 <div className="flex flex-col gap-1 pr-4">
-                  <span className="text-[1rem] lg:text-[1.0625rem] font-semibold text-neutral-800 leading-snug">
+                  <span className="text-xs sm:text-sm text-neutral-500 uppercase tracking-wider mt-1.5">
                     {stat.label}
                   </span>
                   {stat.description && (
                     <span className="text-[0.9375rem]  text-wrap! text-balance! text-neutral-500 leading-snug">
-                      {stat.description}  
+                      {stat.description}
                     </span>
                   )}
                 </div>

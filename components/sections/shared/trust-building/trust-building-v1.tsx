@@ -48,10 +48,10 @@ export function TrustBuildingV1({ data, className }: { data: any; className?: st
                         isEven && isSecondRow && "border-l border-t border-slate-200"
                       )}
                     >
-                      <span className="text-3xl sm:text-4xl font-medium tracking-tight text-foreground">
+                      <span className="font-display text-2xl min[998px]:text-2xl font-medium text-primary tabular-nums tracking-tight">
                         {item.number}
                       </span>
-                      <span className="text-[0.65rem] sm:text-[0.7rem] font-bold uppercase tracking-[0.15em] text-neutral-500 leading-snug">
+                      <span className="text-xs sm:text-sm text-neutral-500 uppercase tracking-wider mt-1.5">
                         {item.label}
                       </span>
                     </div>

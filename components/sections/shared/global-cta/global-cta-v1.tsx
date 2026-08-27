@@ -13,10 +13,10 @@ export function GlobalCtaV1(props: GlobalCtaProps) {
 
   return (
     <div className={cn("w-full px-0 md:px-4 lg:px-0 mx-auto max-w-7xl", props.className)}>
-      <div className="relative overflow-hidden bg-cream! brightness-[0.97]! py-10 md:py-12 px-6 md:px-12 rounded-none md:rounded-lg flex flex-col md:flex-row items-center justify-between gap-8 shadow-sm">
+      <div className="relative overflow-hidden bg-cream! brightness-[0.97]! py-10 md:py-12 px-6 md:px-12 rounded-none md:rounded-lg flex flex-col md:flex-row items-center justify-between gap-8">
         
         {/* Background Noise Overlay */}
-        <NoiseTexture className="opacity-40 mix-blend-overlay pointer-events-none" />
+        {/* <NoiseTexture className="opacity-40 mix-blend-overlay pointer-events-none" /> */}
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center md:items-start text-center md:text-left max-w-2xl">
@@ -31,7 +31,7 @@ export function GlobalCtaV1(props: GlobalCtaProps) {
         {/* Action Button */}
         <div className="relative z-10 shrink-0">
           <Button 
-            className="bg-primary/70 hover:bg-primary text-white font-meduim rounded-lg h-11 px-6 text-sm shadow-xs transition-colors duration-200 cursor-pointer" 
+            className="bg-primary hover:bg-primary/80 text-white font-meduim rounded-lg h-11 px-6 text-sm shadow-xs transition-colors duration-200 cursor-pointer" 
             asChild
           >
             <Link href={buttonLink}>
