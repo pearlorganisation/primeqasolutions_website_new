@@ -103,23 +103,23 @@ export function FaqSection({
           {/* Right Column - Contact Card */}
           {showContactCard && (
             <div className="col-span-1 lg:col-span-5 xl:col-span-4 lg:sticky lg:top-28">
-              <div className="bg-neutral-950 border border-neutral-800 rounded-lg p-7 flex flex-col items-center text-center shadow-[0_24px_48px_-12px_rgba(0,0,0,0.15)] relative overflow-hidden">
-                <div className="absolute -top-20 -right-20 size-48 bg-neutral-800/20 rounded-full blur-3xl pointer-events-none" />
+              <div className="bg-cream brightness-[0.97] rounded-lg p-7 flex flex-col items-center text-center relative overflow-hidden">
+                <div className="absolute -top-20 -right-20 size-48 bg-cream-800/20 rounded-full blur-3xl pointer-events-none" />
 
-                <div className="size-10 bg-neutral-900 border border-neutral-800 rounded-lg flex items-center justify-center mb-5 relative z-10 text-neutral-400">
+                <div className="size-10 bg-cream brightness-[0.87]  rounded-lg flex items-center justify-center mb-5 relative z-10 text-primary">
                   <FaRegCommentDots className="size-5" />
                 </div>
 
-                <h3 className="relative z-10 w-full text-base font-medium text-neutral-50 mb-2 tracking-tight leading-snug">
+                <h3 className="relative z-10 w-full text-base font-medium text-primary mb-2 tracking-tight leading-snug">
                   {cta?.title || "Do You Have More Questions?"}
                 </h3>
 
-                <p className="relative z-10 w-full text-neutral-300/80 text-[13px] md:text-sm leading-relaxed mb-6">
+                <p className="relative z-10 w-full text-secondary text-[13px] md:text-sm leading-relaxed mb-6">
                   {cta?.description || "Our team is ready to provide you with a detailed consultation and answer any specific questions you may have."}
                 </p>
 
                 <Link href={cta?.buttonLink || "/contact-us"} className="w-full block relative z-10">
-                  <Button asChild className="w-full bg-white text-neutral-950 hover:bg-neutral-100 hover:text-neutral-950 transition-all duration-200">
+                  <Button asChild className="w-full bg-primary text-white hover:bg-primary/90  transition-all duration-200">
                     <span>{cta?.buttonLabel || "Contact Us"}</span>
                   </Button>
                 </Link>
