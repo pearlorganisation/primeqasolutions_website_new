@@ -84,13 +84,30 @@ export function CaseStudiesV2({
     <Section className="py-24 lg:py-32">
       <Container>
         {/* Centered header */}
-        <SectionHeaderResolver 
-          align="center"
-          badge={badge}
-          title={heading}
-          titleHighlight={headingHighlight}
-          description={subtext}
-        />
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 lg:mb-12">
+          <div className="flex-1">
+            <SectionHeaderResolver
+              align="left"
+              badge={badge}
+              title={heading}
+              titleHighlight={headingHighlight}
+              description={subtext}
+              className="mb-0 lg:mb-0"
+            />
+          </div>
+          <div className="shrink-0">
+            <Link
+              href="/case-study"
+              // target="_blank"
+              // rel="noopener noreferrer"
+              className="group inline-flex items-center gap-1.5 h-9 px-3.5 rounded-lg bg-neutral-900 text-xs font-semibold text-white shadow-sm hover:bg-neutral-800 transition-all duration-200"
+            >
+              <span>View Case Study</span>
+              <FaArrowRight className="text-[10px] -rotate-45 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </Link>
+          </div>
+        </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {visibleCases.map((cs) => (

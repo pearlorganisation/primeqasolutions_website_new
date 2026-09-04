@@ -649,7 +649,7 @@ function renderRichTextBlock(
 
   const textSize =
     variant === "body"
-      ? "text-sm md:text-base"
+      ? "text-xs md:text-sm"
       : "text-[11px]";
 
   /* ======================================================= */
@@ -926,8 +926,8 @@ function ProcessTimelineItem({
         group
         relative
         w-full
-        py-8
-        lg:py-10
+        py-3
+        lg:py-5
       "
     >
       {/* ================================================= */}
@@ -950,42 +950,12 @@ function ProcessTimelineItem({
         {/* ================================================= */}
 
         <div className="flex items-start">
-          <div>
-            {/* Phase Label */}
-
-            <span
-              className="
-                mb-2
-                block
-                text-xs
-                font-semibold
-                uppercase
-                tracking-[0.16em]
-                text-secondary
-                md:text-sm
-                lg:text-base
-              "
-            >
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-secondary md:text-sm lg:text-base">
               Phase
             </span>
 
-            {/* Phase Number */}
-
-            <span
-              className="
-                block
-                text-xl
-                font-semibold
-                leading-none
-                tracking-tight
-                text-secondary/30
-                transition-colors
-                duration-300
-                group-hover:text-secondary
-                md:text-2xl
-                lg:text-3xl
-              "
-            >
+            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-secondary/30 transition-colors duration-300 group-hover:text-primary/70 md:text-sm lg:text-base">
               {number}
             </span>
           </div>
@@ -1000,7 +970,7 @@ function ProcessTimelineItem({
             <h3
               className="
                 max-w-sm
-                text-lg
+                text-sm
                 font-semibold
                 leading-snug
                 tracking-tight
@@ -1008,8 +978,8 @@ function ProcessTimelineItem({
                 transition-colors
                 duration-300
                 group-hover:text-primary
-                md:text-xl
-                lg:text-2xl
+                md:text-base
+               
               "
             >
               {step.title}
@@ -1028,10 +998,10 @@ function ProcessTimelineItem({
             <div
               className="
                 max-w-xl
-                text-sm
+                text-xs
                 leading-6
                 text-secondary
-                md:text-base
+                md:text-sm
               "
             >
               <RichTextBlocks
@@ -1091,7 +1061,7 @@ function ProcessTimelineItem({
                           icon.className
                         )}
                       >
-                        <Icon className="size-5" />
+                        <Icon className="size-4" />
                       </div>
 
                       {/* Text */}
